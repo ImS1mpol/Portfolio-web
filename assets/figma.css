@@ -1,0 +1,672 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.section {
+    height: 100vh; /* Ensures full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#section0 {
+    background-image: url('./img/section0bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#laphysique {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+#laphysique .container {
+    display: flex;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#laphysique .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    background-color: #000000;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Common styles for all grid items */
+#laphysique .grid div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    min-height: 120px;
+}
+
+/* Individual card styles */
+.lpcard1 {
+    grid-column: span 2;
+    grid-row: span 3;
+    background-color: #fcd5ce;
+    background-image: url('./img/lpzoom.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.lpcard2 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.lpcard2:hover {
+    background-color: #ffffff;
+}
+
+.lpcard2 h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin: 0;
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+.lpcard2:hover h1 {
+    transform: scale(1.2);
+    color: #000000;
+}
+
+.lpcard3 {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.lpcard3 h1 {
+    margin: 5px;
+    width: 70%;
+    text-align: left;
+    font-size: 30px;
+}
+
+.lpcard3 p {
+    margin: 5px;
+    width: 70%;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.lpcard4 {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-image: url('./img/item4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+}
+
+.lpcard5 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.lpcard5 img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.lpcard5 p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.lpcard5:hover {
+    background-color: grey;
+}
+
+.lpcard5:hover img {
+    transform: translate(-50%, -50%) scale(1.6);
+}
+
+
+#onepercent {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+}
+
+/* Container styles (applies to all sections) */
+#onepercent .container {
+    display: flex;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Grid layout */
+#onepercent .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr auto);
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    background-color: #000000;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* General card styles (applies to all cards) */
+#onepercent .grid div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    min-height: 120px;
+}
+
+/* Specific card styles */
+.opcard1 {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: #1e1e1e;
+    margin-top: 1px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for opcard1 */
+.opcard1:hover {
+    background-color: #ffffff;
+}
+
+.opcard1 h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for h1 inside opcard1 */
+.opcard1:hover h1 {
+    transform: scale(1.2);
+    color: #000000;
+}
+
+/* Second card (opcard2) */
+.opcard2 {
+    grid-column: span 2;
+    grid-row: span 5;
+    background-image: url('./img/project.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Third card (opcard3) */
+.opcard3 {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: #1e1e1e;
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.opcard3 h1,
+.opcard3 p {
+    width: 70%;
+    text-align: justify;
+}
+
+.opcard3 h1 {
+    margin: 5px;
+    font-size: 30px;
+}
+
+.opcard3 p {
+    margin: 15px;
+    font-size: 20px;
+}
+
+/* Fourth card (opcard4) */
+.opcard4 {
+    grid-column: span 1;
+    grid-row: span 1.5;
+    background-color: #ffffff;
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+/* opcard4 image styling */
+.opcard4 img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for opcard4 */
+.opcard4:hover {
+    background-color: grey;
+}
+
+.opcard4:hover img {
+    transform: translate(-50%, -50%) scale(1.6);
+}
+
+/* opcard4 text styling */
+.opcard4 p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#culture {
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+}
+
+/* Container styles (applies to all sections) */
+#culture .container {
+    display: flex; /* Flexbox layout */
+    height: 95vh; /* Container height */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+}
+
+/* Grid layout */
+#culture .grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    background-color: #000000;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* General card styles (applies to all cards) */
+#culture .grid div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    min-height: 120px;
+}
+
+
+/* Additional Styles for cltrcard1 to cltrcard5 */
+.cltrcard1 {
+    grid-column: span 2;
+    grid-row: span 3;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.cltrcard1:hover {
+    background-color: #ffffff;
+}
+
+.cltrcard1 h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin: 0;
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+.cltrcard1:hover h1 {
+    transform: scale(1.2);
+    color: #000000;
+}
+
+.cltrcard2 {
+    grid-column: span 2;
+    grid-row: span 4;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cltrcard2 h1 {
+    margin: 5px;
+    width: 70%;
+    text-align: justify;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.cltrcard2 p {
+    margin: 15px;
+    width: 70%;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.cltrcard3 {
+    grid-column: span 3;
+    grid-row: span 7;
+    background-image: url('./img/culture.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+}
+
+.cltrcard4 {
+    grid-column: span 2;
+    grid-row: span 4;
+    background-image: url('./img/culture1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cltrcard5 {
+    grid-column: span 2;
+    grid-row: span 3;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+    
+
+
+.cltrcard5 img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.cltrcard5 p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.cltrcard5:hover {
+    background-color: grey;
+}
+
+.cltrcard5:hover img {
+    transform: translate(-50%, -50%) scale(1.6);
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    #laphysique {
+        min-height: 100vh;
+        padding: 10px;
+    }
+
+    #laphysique .grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    #laphysique .grid div {
+        height: auto;
+        margin: 0;
+        flex: 1;
+        padding: 10px;
+    }
+
+    .lpcard3 h1 {
+        font-size: 0.8rem;
+    }
+
+    .lpcard3 p {
+        font-size: 0.7rem;
+    }
+
+    .card {
+        transition: transform 0.3s ease; /* Smooth transition */
+    }
+    
+    .card.expanded {
+        transform: scale(1.5); /* Scale up on expansion */
+        z-index: 10; /* Bring the expanded card to the front */
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    #onepercent {
+        min-height: 100vh; /* Minimum height for smaller screens */
+        padding: 10px; /* Padding adjustment */
+    }
+
+    /* Change .section to #onepercent to target the correct element */
+    #onepercent .grid {
+        display: flex; /* Change to flex layout for responsiveness */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width */
+        height: auto; /* Auto height */
+    }
+
+    #onepercent .grid div {
+        height: auto; /* Auto height for grid items */
+        margin: 0; /* No margin */
+        flex: 1; /* Ensures all items take equal space */
+        padding: 10px; /* Padding inside cards */
+        min-height: 120px; /* Keeps a minimum height for all items */
+    }
+
+    .opcard1 {
+        /* Assuming these classes are correct */
+        background-color: #1e1e1e; /* Optional: set a common background color */
+    }
+
+    /* Specific styles for items to match the size of item 3 */
+    .opcard4, .opcard5 {
+        background-color: #ffffff; /* Optional: set a common background color */
+    }
+
+    /* Adjust text size for smaller screens */
+    .opcard3 h1 {
+        font-size: 0.8rem; /* Smaller font size */
+    }
+
+    .opcard3 p {
+        font-size: 0.7rem; /* Smaller font size */
+    }
+
+    /* Optional: additional styles for hover effects */
+    .opcard1:hover, .opcard4:hover, .opcard5:hover {
+        background-color: #ffffff; /* Adjust hover effect */
+    }
+
+    .opcard4 img {
+        max-width: 100%; /* Responsive image */
+        max-height: 100%; /* Responsive image */
+        object-fit: cover; /* Optional: maintain aspect ratio */
+    }
+    .card {
+        transition: transform 0.3s ease; /* Smooth transition */
+    }
+    
+    .card.expanded {
+        transform: scale(1.5); /* Scale up on expansion */
+        z-index: 10; /* Bring the expanded card to the front */
+    }
+
+   
+}
+@media screen and (max-width: 768px) {
+
+
+
+
+    #culture {
+        min-height: 100vh; /* Minimum height for smaller screens */
+        padding: 10px; /* Padding adjustment */
+    }
+
+    /* Change .section to #onepercent to target the correct element */
+    #culture .grid {
+        display: flex; /* Change to flex layout for responsiveness */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width */
+        height: auto; /* Auto height */
+    }
+
+    #culture .grid div {
+        height: auto; /* Auto height for grid items */
+        margin: 0; /* No margin */
+        flex: 1; /* Ensures all items take equal space */
+        padding: 10px; /* Padding inside cards */
+        min-height: 120px; /* Keeps a minimum height for all items */
+    }
+
+
+    .cltrcard2 h1 {
+        font-size: 0.8rem; /* Adjusted font size to align with the rest */
+    }
+
+    .cltrcard2 p {
+        font-size: 0.7rem; /* Adjusted font size to align with the rest */
+    }
+
+    .cltrcard5 p {
+        font-size: 0.8rem; /* Adjusted font size to align with the rest */
+    }
+    .card {
+        transition: transform 0.3s ease; /* Smooth transition */
+    }
+    
+    .card.expanded {
+        transform: scale(1.5); /* Scale up on expansion */
+        z-index: 10; /* Bring the expanded card to the front */
+    }
+
+
+}
